@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  labdit:
+    build: .
+    container_name: labdit_challenge
+    ports:
+      - "80:80"
+    restart: always
