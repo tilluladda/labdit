@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labdit - u/sam_sepiol: the front page of the internet</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <a href="/" class="logo">
+        <div class="logo-icon">L</div>
+        <div class="logo-text">labdit</div>
+      </a>
+
+      <!-- Reddit search bar style -->
+      <div class="search-bar-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-bar" placeholder="Search Labdit">
+      </div>
+
+      <nav class="nav-links">
+        <a href="/" class="btn-reddit">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Content Container -->
+  <div class="container">
+
+    <!-- Left Content Feed -->
+    <main class="posts-list" id="postsContainer">
+      <div style="color: var(--text-muted); text-align: center; padding: 3rem; font-size: 0.9rem;">
+        Loading feed...
+      </div>
+    </main>
+
+    <!-- Right Sidebar Widgets -->
+    <aside class="sidebar-panel">
+
+      <!-- Widget 1: About Community -->
+      <div class="widget-card">
+        <div class="widget-title">About Community</div>
+        <div class="widget-body">
+          <p>Welcome to Labdit, a secure intranet message board used by fsociety members to exchange ideas, theories,
+            and notes.</p>
+          <div class="community-details">
+            <div class="detail-row">
+              <span style="color: var(--text-muted);">Members</span>
+              <span class="detail-val">128,401</span>
+            </div>
+            <div class="detail-row">
+              <span style="color: var(--text-muted);">Online</span>
+              <span class="detail-val">529</span>
+            </div>
+            <div class="detail-row"
+              style="margin-top: 0.5rem; border-top: 1px solid var(--border-color); padding-top: 0.5rem;">
+              <span style="color: var(--text-muted);">Created</span>
+              <span class="detail-val">May 5, 2015</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Widget 2: r/fsociety Rules -->
+      <div class="widget-card">
+        <div class="widget-title">r/fsociety Rules</div>
+        <div class="widget-body">
+          <ol class="rules-list">
+            <li>
+              <strong>No E-Corp Apologists</strong>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.1rem;">Any posts or comments
+                defending E-Corp or their debt systems will be deleted immediately.</p>
+            </li>
+            <li>
+              <strong>Stay Anonymous</strong>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.1rem;">Do not post names, IP
+                addresses, or any personal details that could compromise group operations.</p>
+            </li>
+            <li>
+              <strong>Keep Content Relevant</strong>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.1rem;">All discussions must focus on
+                security vulnerabilities, systems mapping, and technical guides.</p>
+            </li>
+            <li>
+              <strong>No Spam or Self-Promotion</strong>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.1rem;">Keep the board clean.
+                Extraneous traffic wastes bandwidth on our VPN nodes.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+
+
+    </aside>
+
+  </div>
+
+  <!-- Single Post / Comments Modal -->
+  <div class="modal-overlay" id="postModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div id="modalPostContent">
+        <!-- Dynamic Content populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+
+</html>

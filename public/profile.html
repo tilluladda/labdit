@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labdit - User Profile Overview</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <a href="/" class="logo">
+        <div class="logo-icon">L</div>
+        <div class="logo-text">labdit</div>
+      </a>
+
+      <!-- Reddit search bar style -->
+      <div class="search-bar-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-bar" placeholder="Search Labdit">
+      </div>
+
+      <nav class="nav-links">
+        <a href="/" class="btn-reddit">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Profile Grid Container -->
+  <div class="profile-container" id="profileContainer">
+    <!-- Left Column: User's posts (simulated list) -->
+    <main class="posts-list">
+      <div class="widget-card"
+        style="border-radius: 1rem; padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+        <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Overview
+          of User Submissions</div>
+        <div id="userPostsList">
+          <div style="color: var(--text-muted); font-size: 0.9rem; padding: 1.5rem 0;">
+            Retrieving post submissions by this user...
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Column: User Profile Card & Quick Links -->
+    <aside class="profile-sidebar" style="display: flex; flex-direction: column; gap: 1rem; width: 312px;">
+      <div class="profile-card" id="profileCard" style="width: 100%;">
+        <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
+          Retrieving user details...
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+
+</html>
